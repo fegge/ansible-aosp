@@ -17,10 +17,10 @@
 - name: Run repo init
   command: repo init --depth=1 -u https://android.googlesource.com/platform/manifest -b {{ source_tag }}
   args:
-    path: {{ source_dir }}
+    path: "{{ source_dir }}"
 
 # The option -c limits downloads to the current branch.
 - name: Run repo sync
   command: repo sync -c -j4
   args:
-    path: {{ source_dir }}
+    path: "{{ source_dir }}"
