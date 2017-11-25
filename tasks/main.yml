@@ -3,10 +3,10 @@
 - name: Gathering facts
   setup:
 
-- include: apt.yml
+- include_tasks: apt.yml
 
-- include: bashrc.yml
+- include_tasks: bashrc.yml
 
-- include: repo.yml
+- include_tasks: repo.yml
 
 
