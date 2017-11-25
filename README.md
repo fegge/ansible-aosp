@@ -30,7 +30,7 @@ The role can be used as follows
 
     - hosts: localhost
       roles:
-         - role: fegge.ansible-aosp
+         - role: fegge.aosp
            source_tag: android-7.1.1_r1
 
 
