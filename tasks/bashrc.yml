@@ -1,0 +1,15 @@
+---
+
+- name: Set build directory
+  lineinfile:
+    path: /home/ubuntu/.bashrc
+    line: "export OUT_DIR_COMMON_BASE={{ build_dir }}"
+
+- name: Enable ccache
+  lineinfile:
+    path: /home/ubuntu/.bashrc
+    line: "{{ item }}"
+    with_items:
+      - "export OUT_DIR_COMMON_BASE=/home/ubuntu/build"
+      - "export USE_CCACHE=1"
+      - "export CCACHE_DIR={{ build_dir }}/.ccache"

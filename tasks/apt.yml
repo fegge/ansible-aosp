@@ -1,0 +1,9 @@
+- name: Update package cache
+  apt: update_cache=yes cache_valid_time=3600
+
+- name: Upgrade system
+  apt: upgrade=dist
+
+- name: Install required packages
+  apt: name={{item}} state=installed
+  with_items: "{{ubuntu_package_list}}"

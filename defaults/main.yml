@@ -1,0 +1,5 @@
+source_dir: /home/ubutu/source
+
+build_dir: /home/ubuntu/build
+
+source_tag: android-7.1.1_r1

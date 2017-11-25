@@ -1,0 +1,14 @@
+galaxy_info:
+  author: Fredrik Dahlgren
+  description: Sets up AOSP build environment
+  license: GPLv2
+  min_ansible_version: 1.2
+  platforms:
+    - name: Ubuntu
+      versions:
+      - all
+  galaxy_tags:
+    - android
+    - aosp
+    
+dependencies: []
