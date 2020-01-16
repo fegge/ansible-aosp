@@ -1,9 +1,11 @@
 - name: Update package cache
+  become: yes
   apt: update_cache=yes cache_valid_time=3600
 
 - name: Upgrade system
+  become: yes
   apt: upgrade=dist
 
 - name: Install required packages
-  apt: name={{item}} state=installed
-  with_items: "{{ubuntu_package_list}}"
+  become: yes
+  apt: name='{{ubuntu_package_list}}' state=present
