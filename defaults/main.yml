@@ -3,3 +3,5 @@ source_dir: /home/ubuntu/source
 build_dir: /home/ubuntu/build
 
 source_tag: android-10.0.0_r25
+
+sync_source: true

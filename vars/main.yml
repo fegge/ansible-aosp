@@ -22,3 +22,10 @@ ubuntu_package_list:
   - xsltproc
   - unzip
   - python
+  - lzma
+  - lzop
+  - gettext
+  - pkg-config
+  - libmpc-dev
+  - u-boot-tools
+  - libssl-dev:amd64
