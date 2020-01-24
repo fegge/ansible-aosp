@@ -1,5 +1,7 @@
-source_dir: /home/ubutu/source
+source_dir: /home/ubuntu/source
 
 build_dir: /home/ubuntu/build
 
-source_tag: android-7.1.1_r1
+source_tag: android-10.0.0_r25
+
+sync_source: true
