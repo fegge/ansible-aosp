@@ -13,3 +13,4 @@
     - "export OUT_DIR_COMMON_BASE=/home/ubuntu/build"
     - "export USE_CCACHE=1"
     - "export CCACHE_DIR={{ build_dir }}/.ccache"
+    - "export CCACHE_EXEC=/usr/bin/ccache"
